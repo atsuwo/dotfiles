@@ -1,0 +1,18 @@
+## add
+# status
+hardstatus alwayslastline "%{= rw} %H %{= wk}%-Lw%{= bw}%n%f* %t%{= wk}%+Lw %{= wk}%=%{= gk} %y/%m/%d %c "
+# escape
+escape ^Zz
+# visual bell
+vbell off
+# startup message
+startup_message off
+# auto detach
+autodetach on
+# scroll back
+defscrollback 100000
+# resize
+bind r eval 'echo "Resize window"' 'command -c resize'
+bind -c resize ^]  command
+bind -c resize j eval 'resize +1' 'command -c resize'
+bind -c resize k eval 'resize -1' 'command -c resize'
